@@ -19,12 +19,10 @@
                 @yield('content')
             </div>
         </div>
-        
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+        <!-- CkEditor -->
+        <script src="//cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
         <script>
-            CKEDITOR.replace( 'article-ckeditor' );
-        </script>      
+            CKEDITOR.replace( 'post-body' );
+        </script>
     </body>
 </html>
